@@ -2,14 +2,10 @@
 
 LOCAL_PATH:= $(call my-dir)
 
-
 init_cflags += \
     -Wall -Wextra \
     -Wno-unused-parameter \
 
-
-# If building on Linux, then build unit test for the host.
-ifeq ($(HOST_OS),linux)
 include $(CLEAR_VARS)
 LOCAL_CFLAGS := $(init_cflags)
 LOCAL_SRC_FILES:= \
